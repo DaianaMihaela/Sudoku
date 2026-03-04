@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px); 
+    grid-template-rows: repeat(9, 40px);
+    gap: 2px;
+    margin: 50px;
+    padding: 50px;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell:focus {
+    border-color: #199c50;
+    outline: none;
+  }
+  
+  .cell.conflict {
+    background-color: #fbb;
+  }
+  
+  .board > .cell:nth-child(3n) {
+    border-right: 2px solid black;
+  }
+  
+  .board > .cell:nth-child(9n) {
+    border-bottom: 2px solid black;
+  }
+  
+  .board > .cell:nth-child(27n + 1) {
+    border-left: 2px solid black;
+  }
+  
+  .board > .cell:nth-child(9n + 1) {
+    border-top: 2px solid black;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(9, 0, 0);
+    transition: background-color 0.3s;
+  }
+
+  .cell.readonly {
+    background-color: #e9e9e9;
+    font-weight: bold;
+  }
+  
+  .cell.conflict {
+    background-color: #fbb;
+  }
+  
+  .board > .cell:nth-child(3n) {
+    border-right: 2px solid black;
+  }
+  
+  .board > .cell:nth-child(9n) {
+    border-bottom: 2px solid black;
+  }
+  
+  .board > .cell:nth-child(27n + 1) {
+    border-left: 2px solid black;
+  }
+  
+  .board > .cell:nth-child(9n + 1) {
+    border-top: 2px solid black;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(9, 9, 9);
+    transition: background-color 0.3s;
+  }
+
+  
+  .message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    min-height: 24px;
+  }
+  
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    background-color:#b39fa1;
+    box-sizing: border-box;
+  }
+  
+
+
+    
+  
